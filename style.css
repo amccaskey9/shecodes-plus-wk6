@@ -1,0 +1,63 @@
+h1 {
+  text-align: center;
+  color: #b291c6;
+  padding: 20px;
+  font-family: "Poiret One", cursive;
+}
+
+div.convert {
+  text-align: right;
+}
+
+div.current-lo {
+  text-align: left;
+}
+
+.weather-app {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.container {
+  background: #d6b8f1;
+  border: solid 3px #8d709f;
+  font-family: "Poiret One", cursive;
+  max-width: 900px;
+}
+.search {
+  padding: 20px 40px;
+}
+
+.current-weather {
+  background: #b291c6;
+  color: #fff;
+  padding: 20px;
+}
+
+.temp-scale {
+  font-size: 30px;
+  color: #bcbaba;
+  text-align: left;
+}
+
+.weekly-forecast {
+  background: #b291c6;
+  color: #fff;
+  padding: 20px 15px;
+  text-align: center;
+}
+
+.high {
+  color: #e10000;
+  padding-top: 15px;
+  margin-bottom: 0;
+}
+
+.low {
+  color: #016fc5;
+}
+
+.convert,
+.current-lo {
+  padding: 40px 20px 20px 20px;
+}
