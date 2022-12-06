@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Parcel Sandbox</title>
+  <meta charset="UTF-8" />
+  <link href="src/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/3269658bb6.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+</head>
+
+<body>
+  <h1>Weather with Aiyana</h1>
+  <div class="container">
+    <div class="weather-app">
+      <div class="search row-9">
+        <form id="search">
+          <input type="search" placeholder="Enter a city..." id="search-input" required />
+          <input type="submit" value="Search" />
+        </form>
+      </div>
+      <div class="current-weather row">
+        <div class="col-4">
+          <p id="place">
+            Atlanta, GA, USA
+          </p>
+        </div>
+        <div class="col-4">
+          <p id="date">
+            Sat, Nov 9, 2022 <br />
+            07:35 PM
+          </p>
+        </div>
+        <div class="current-temp col-2" id="current-temp">
+          50° F
+          <br />
+          <i class="fa-solid fa-cloud-bolt"></i>
+        </div>
+        <span class="temp-scale col">
+          <i class="fa-solid fa-temperature-arrow-down"> </i>
+        </span>
+      </div>
+      <div class="weekly-forecast row">
+        <div class="weekday col">
+          Monday
+          <br />
+          <p class="high">72° F</p>
+          <p class="low">59° F</p>
+          <i class="fa-solid fa-sun"></i>
+        </div>
+        <div class="weekday col">
+          Tuesday
+          <br />
+          <p class="high">67° F</p>
+          <p class="low">48° F</p>
+          <i class="fa-solid fa-cloud-sun"></i>
+        </div>
+        <div class="weekday col">
+          Wednesday
+          <br />
+          <p class="high">55° F</p>
+          <p class="low">40° F</p>
+          <i class="fa-solid fa-cloud"></i>
+        </div>
+        <div class="weekday col">
+          Thursday
+          <br />
+          <p class="high">60° F</p>
+          <p class="low">49° F</p>
+          <i class="fa-solid fa-cloud-showers-heavy"></i>
+        </div>
+        <div class="weekday col">
+          Friday
+          <br />
+          <p class="high">65° F</p>
+          <p class="low">50° F</p>
+          <i class="fa-solid fa-cloud-sun-rain"></i>
+        </div>
+      </div>
+      <div class="convert">
+        <button type="button" class="btn btn-secondary btn-sm">Convert</button>
+      </div>
+      <div class="current-lo" id="current-lo"><button type="button" class="btn btn-secondary btn-sm">Current Location
+      </div>
+      <script src="src/index.js"></script>
+    </div>
+</body>
+
+</html>
